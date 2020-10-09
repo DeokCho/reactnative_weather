@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import { StyleSheet, Text, View, Alert } from 'react-native';
+import { StyleSheet, Text, View, StatusBar } from 'react-native';
 
 const styles = StyleSheet.create({
     container : {
@@ -18,6 +18,7 @@ const styles = StyleSheet.create({
 const Loading = () =>{
     return (
         <View style={styles.container}>
+            <StatusBar barStyle="dark-content"/>
             <Text style={styles.font}>Weather</Text>
         </View>
     )
