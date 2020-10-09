@@ -1,5 +1,5 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, {useState, useEffect} from 'react';
+import { StyleSheet, Text, View, Alert } from 'react-native';
 
 const styles = StyleSheet.create({
     container : {
@@ -17,9 +17,9 @@ const styles = StyleSheet.create({
 
 const Loading = () =>{
     return (
-    <View style={styles.container}>
-        <Text style={styles.font}>Weather</Text>
-    </View>
+        <View style={styles.container}>
+            <Text style={styles.font}>Weather</Text>
+        </View>
     )
 }
 
